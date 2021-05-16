@@ -2,7 +2,7 @@
 library library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.STD_LOGIC_unsigned.all;
-use ieee.std_logic.arith.all; 
+use ieee.std_logic_arith.all; 
 
 -- /** Define the I/Os **\
 ENTITY case_syd IS
