@@ -9,7 +9,7 @@ ENTITY vec_syd IS
 PORT (clk, res : IN STD_LOGIC; -- set clock and reset as single bit logic input
       ai       : IN STD_LOGIC_VECTOR(2 downto 0); -- set the input bit vector range to 3bits (000 to 111) '0 - 7'
       x        : IN STD_LOGIC_VECTOR(1 downto 0); -- set the input bit vector range to 2bits (00 to 11) '0 - 3'
-      fx       : OUT STD_LOGIC_VECTOR(8 downto 0)); -- set the output but vector range to 8bits (00000000)
+      fx       : OUT STD_LOGIC_VECTOR(8 downto 0)); -- set the output but vector range to 9bits (00000000)
 END vec_syd;
 
 -- /** Describe behavioral domain of the entity **\
