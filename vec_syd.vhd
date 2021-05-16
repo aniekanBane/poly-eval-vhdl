@@ -2,7 +2,7 @@
 library IEEE; -- describes the definitions of logic values to be used in electronic design automation
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.STD_LOGIC_unsigned.all;
-use ieee.std_logic.arith.all; 
+use ieee.std_logic_arith.all; 
 
 -- /** Define the I/Os **\
 ENTITY vec_syd IS
