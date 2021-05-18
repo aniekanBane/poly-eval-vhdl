@@ -14,14 +14,14 @@ END vec_syd;
 
 -- /** Describe behavioral domain of the entity **\
 ARCHITECTURE bhv OF vec_syd IS
-SIGNAL reg1 : STD_LOGIC_VECTOR(10 downto 0); -- internal signal register with 10bit vector range (XXXXXXXXXX)
+SIGNAL reg1 : STD_LOGIC_VECTOR(8 downto 0); -- internal signal register with 10bit vector range (XXXXXXXXXX)
 BEGIN
  PROCESS -- sequential logic execution
  BEGIN
     WAIT UNTIL (clk'EVENT AND clk = '1') -- wait for the clock to go high => (+ve) '1'
             IF res = '1' THEN reg1 <= (others => '0'); -- when the input res is high reset all bits of the register
-            ELSE reg1 <= x * (ai + reg1(8 downto 0)); -- (normal behavior) reg1 is assigned the result
+            ELSE reg1 <= x * (ai + reg1(6 downto 0)); -- (normal behavior) reg1 is assigned the result
             END IF;
  END PROCESS ;
-            fx <= reg1(8 downto 0) + ai; -- assign result
+            fx <= reg1 + ai; -- assign result
 END bhv;
