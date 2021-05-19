@@ -1,5 +1,5 @@
 -- load packages
-library IEEE; -- describes the definitions of logic values to be used in electronic design automation
+library IEEE; 
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.STD_LOGIC_unsigned.all;
 use ieee.std_logic_arith.all; 
@@ -14,7 +14,7 @@ END vec_syd;
 
 -- /** Describe behavioral domain of the entity **\
 ARCHITECTURE bhv OF vec_syd IS
-SIGNAL reg1 : STD_LOGIC_VECTOR(8 downto 0); -- internal signal register with 10bit vector range (XXXXXXXXXX)
+SIGNAL reg1 : STD_LOGIC_VECTOR(8 downto 0); -- internal signal register with 9bit vector range (XXXXXXXXXX)
 BEGIN
  PROCESS -- sequential logic execution
  BEGIN
