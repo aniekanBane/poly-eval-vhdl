@@ -10,4 +10,3 @@ The codes were developed in this particular order:
 2. vec_syd - low-level code for polynonial evaluation.
 3. validOUT - low-level code with controoled output.
 4. genericD - adapted generic code.
-
