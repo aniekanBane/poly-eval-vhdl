@@ -12,4 +12,4 @@ The codes were developed in this particular order:
 3. validOUT - low-level code with controoled output.
 4. genericD - adapted generic code.
 
-step-by-step
+[step-by-step](https://anumana8.medium.com/vhdl-circuit-design-7f45a4280b54)
