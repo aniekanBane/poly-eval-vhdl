@@ -16,7 +16,7 @@ PORT (clk, res : IN STD_LOGIC; -- set clock and reset as single bit logic input
       fx       : OUT STD_LOGIC_VECTOR(n4-1 downto 0)); -- set the output but vector range to n4bits 
 END genericD;
 -- /** Describe behavioral domain of the entity **\
-ARCHITECTURE bhv OF validOUT IS
+ARCHITECTURE bhv OF genericD IS
 SIGNAL reg1     : STD_LOGIC_VECTOR(n4-1 downto 0):=(others => '0'); -- internal signal register 
 SIGNAL control  : STD_LOGIC_VECTOR(n3 downto 0):= (n3-3=>'1', others => '0'); -- internal signal register to control the output  
 SIGNAL datafinal: STD_LOGIC_VECTOR(n4-1 downto 0):= (others => '0'); -- internal signal register were the results of the polynomial is written to 
