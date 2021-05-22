@@ -9,7 +9,7 @@ The codes were developed using industry standard software, Intel Quartus Prime (
 The codes were developed in this particular order:
 1. case_syd - high-level code for polynomial evaluation.
 2. vec_syd - low-level code for polynonial evaluation.
-3. validOUT - low-level code with controoled output.
+3. validOUT - low-level code with controlled output.
 4. genericD - adapted generic code.
 
 [step-by-step](https://anumana8.medium.com/vhdl-circuit-design-7f45a4280b54)
